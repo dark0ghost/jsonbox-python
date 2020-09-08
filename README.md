@@ -1,5 +1,6 @@
-# jsonbox-python
 
+**service: https://jsonbox.io**
+__use doc https://github.com/vasanthv/jsonbox#readme__
 
 # how use
 ```python
@@ -20,3 +21,9 @@ from aiojsonbox import JsonBox
 
     asyncio.run(main())
 ```
+# requirements
+|nam|version|
+|----|----|
+|python|>3.7|
+|os|all|
+|aiohttp|3.6.2|
