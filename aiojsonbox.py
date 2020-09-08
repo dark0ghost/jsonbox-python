@@ -126,20 +126,3 @@ class JsonBox:
                 return await response.json(encoding=encoding)
             raise ServiceError(f"jsonbox responses have status {response.status} => {await response.text()} ")
 
-
-if __name__ == '__main__':
-    import asyncio
-
-
-    async def main():
-        s = JsonBox()
-        print(await s.create_box(text="""{
-            "b": "3"
-        }"""))
-        await s.edit_data_link(url=input(), text="""{
-            "a": 1
-        }""")
-        await s.close()
-
-
-    asyncio.run(main())
